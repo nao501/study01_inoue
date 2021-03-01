@@ -15,7 +15,12 @@ def search ():
         print('{}が見つかりました。'.format(word))
     else:
         print('{}が見つかりませんでした。'.format(word))
-        character_deta.append(word)
+        answer1=input(word+'を追加しますか？（YES=0,NO=1) :')
+        if answer1 == '0':
+            character_deta.append(word)
+            print(word +'を追加しました。')
+        else:
+            print(word +'を追加しませんでした。')    
 
 if  __name__ =='__main__':
     search()
